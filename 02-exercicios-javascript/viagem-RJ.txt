@@ -1,0 +1,19 @@
+15/11 - 4ª: partida para BH (750 km)
+                            gasolina    R$ 375
+                            hotel:      R$ 280
+                            almoço:     R$ 160
+                            jantar:     R$ 160     
+16/11 - 5ª: partida para RJ (440 km) 
+                            gasolina    R$ 220
+                            hotel:      R$ 300
+                            almoço:     R$ 200 
+                            jantar:     R$ 200
+17/11 - 6ª: estadia RJ
+                            hotel:      R$ 300
+                            almoço:     R$ 200 
+                            jantar:     R$ 200
+15/11 - Sª: partida para BSB (1170 km)
+                            gasolina    R$ 585
+                            almoço:     R$ 200 
+                            
+                            total       R$ 3.380,00
