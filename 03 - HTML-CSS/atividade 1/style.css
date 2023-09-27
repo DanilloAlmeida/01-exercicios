@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    border-style: solid ;
+    border-color: red;
+    margin: 10%;
+    display: flex;
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    justify-content: space-evenly;
+}
