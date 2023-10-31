@@ -1,0 +1,24 @@
+ssh z38166@204.90.115.200
+NAB55OPT
+
+comandos:
+uss-setup       -- monta o diretório inicial do desafio 
+clear           -- limpa a tela 
+touch           -- cria ou abre arquivo 
+cat             -- abre???
+
+NO USS, FILTRAR POR:
+/z/z38166
+---------------------------------------------------------------------------------
+REXX:
+
+zowe profiles create tso-profile zxploreRexx -a FB3
+zowe profiles create tso-profile zxplore -a FB3
+
+zowe profiles set-default zosmf zxplore
+zowe profiles set-default tso zxplore
+
+zowe profiles delete tso
+zowe profiles delete zosmf
+
+zowe profiles list zosmf
