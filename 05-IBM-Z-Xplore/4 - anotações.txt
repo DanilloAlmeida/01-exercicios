@@ -7,7 +7,7 @@ clear           -- limpa a tela
 touch           -- cria ou abre arquivo 
 cat             -- abre???
 
-NO DATA SET FILTRAR POR:
+NO DATA SET FILTRAR POR: (esse aqui tem que aparecer)
 Z38166,ZXP.PUBLIC
 
 NO USS, FILTRAR POR:
