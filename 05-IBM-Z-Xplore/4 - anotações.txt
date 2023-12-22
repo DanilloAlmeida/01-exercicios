@@ -7,13 +7,19 @@ clear           -- limpa a tela
 touch           -- cria ou abre arquivo 
 cat             -- abre???
 
+NO DATA SET FILTRAR POR:
+Z38166,ZXP.PUBLIC
+
 NO USS, FILTRAR POR:
 /z/z38166
 ---------------------------------------------------------------------------------
 REXX:
 
-zowe profiles create tso-profile zxploreRexx -a FB3
+
 zowe profiles create tso-profile zxplore -a FB3
+
+/root/.zowe/profiles/tso/zxplore.yaml
+/home/danillo/.zowe/profiles/tso/zxplore.yaml
 
 zowe profiles set-default zosmf zxplore
 zowe profiles set-default tso zxplore
@@ -22,3 +28,40 @@ zowe profiles delete tso
 zowe profiles delete zosmf
 
 zowe profiles list zosmf
+---------------------------------------------------------------------------------
+For most users of MacOS, these should do the trick.
+1. mkdir ~/.npm-global
+2. npm config set prefix ~/.npm-global
+3. echo "PATH=~/.npm-global/bin/:$PATH" >> .zprofile
+4. echo "export PATH" >> .zprofile
+5. source .zprofile
+6. npm i -g @zowe/cli
+
+Run [npm install -g npm@10.2.2] to update! ???????
+
+---------------------------------------------------------------------------------
+zowe tso issue command "exec 'Z38166.SOURCE(SOMEREXX)'" --ssm
+
+zowe tso start as
+
+SO address space began successfully, key is: Z38166-111-aabqaahf
+
+Z38166 LOGON IN PROGRESS AT 04:57:00 ON NOVEMBER 1, 2023
+NO BROADCAST MESSAGES
+READY 
+
+zowe tso stop as {my-as-key}
+
+zowe tso send as Z38166-111-aabqaahf --data "exec 'Z38166.SOURCE(SOMEREXX)'"
+---------------------------------------------------------------------------------
+07 - WRAP UP
+
+decho -a "This line goes at the bottom" 'Z38166.JCL3OUT'
+---------------------------------------------------------------------------------
+07.03: executar script python:
+    python3 dslist.py 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+#################################################################################
