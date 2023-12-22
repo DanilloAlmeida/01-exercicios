@@ -2,7 +2,7 @@ CREATE YOUR PROFILE
 
 ------------------------------------------------------------------------------
 ssh z38166@204.90.115.200
-NAB55OPT
+NAB55OPT >> RED01WAX
 
 comandos:
 uss-setup       -- monta o diretório inicial do desafio 
