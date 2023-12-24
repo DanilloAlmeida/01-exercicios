@@ -1,5 +1,11 @@
 CREATE YOUR PROFILE 
-
+zxplore
+zosmf
+https://zxp.ibmz.ibm.com:10443
+Z38166
+RED01WAX
+False
+https
 ------------------------------------------------------------------------------
 ssh z38166@204.90.115.200
 NAB55OPT >> RED01WAX
