@@ -82,6 +82,18 @@ echo $ASKEY
 ---------------------------------------------------------------------------------
 for /f "delims=" %i in ('zowe tso start address-space --sko -a FB3') do set ASKEY=%i
 ---------------------------------------------------------------------------------
+zowe tso send address-space $ASKEY --data "PROFILE PREFIX(Z38166)"
+zowe tso send address-space $ASKEY --data "PROFILE"
+zowe tso send address-space $ASKEY --data "test (asmpgm)"
+zowe tso send address-space $ASKEY --data "LISTPSW"
+zowe tso send address-space $ASKEY --data "l 0r:15r"
+zowe tso send address-space $ASKEY --data "l 15r% length(240)"
+zowe tso send address-space $ASKEY --data "l 15r% length(240) c"
+zowe tso send address-space $ASKEY --data "l +0 length(240)"
+zowe tso send address-space $ASKEY --data "at +14 (l 0r:15r)"
+zowe tso send address-space $ASKEY --data "at +28 (l 0r:15r)"
+zowe tso send address-space $ASKEY --data "at +2C (l 2r)"
+zowe tso send address-space $ASKEY --data "at +30 (l 2r;l +E8 length(5) c)"
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
