@@ -1,0 +1,33 @@
+zowe zos-files list ds Z38166 -a
+zowe zos-files list ds Z38166.VSAMDS -a
+zowe zos-files list ds Z38166.ZOWEPS -a
+zowe zos-files delete ds Z38166.ZOWEPS -f
+
+zowe zos-files create data-set-vsam Z38166.VSAMDS
+zowe zos-files create data-set-vsam Z38166.VSAMDS --attributes
+
+
+zowe zos-files delete -h
+
+ COMMANDS
+ --------
+
+   data-set | ds           Delete a data set or data set member permanently      
+   data-set-vsam | vsam    Delete a VSAM cluster permanently                     
+   migrated-data-set | mds Delete migrated data sets.                            
+   uss-file | uf | uss     Delete a Unix Systems Services (USS) File or directory
+                           permanently                                           
+   zos-file-system | zfs   Delete a z/OS file system permanently        
+
+
+zowe zos-files create ds Z38166.ZOWEPS --lrecl 120 --blksize 9600
+
+zowe zos-files delete vsam Z38166.VSAMDS -f
+zowe zos-files create vsam Z38166.VSAMDS
+zowe zos-files list am Z38166.VSAMDS
+
+zowe zos-files list file-system Z38166.VSAMDS
+
+zowe jobs submit local-file "repro.txt"
+
+zowe files create pds 'Zxxxxx.CBL' --data-class spds
