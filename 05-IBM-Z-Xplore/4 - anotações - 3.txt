@@ -30,4 +30,6 @@ zowe zos-files list file-system Z38166.VSAMDS
 
 zowe jobs submit local-file "repro.txt"
 
-zowe files create pds 'Zxxxxx.CBL' --data-class spds
+zowe files create pds 'Z38166.CBL' --data-class spds
+
+workbench.editor.enable

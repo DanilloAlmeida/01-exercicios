@@ -1,0 +1,4 @@
+ssh z38166@204.90.115.200
+RED01WAX
+
+mkdir USSmovies
