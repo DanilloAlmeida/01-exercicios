@@ -1,6 +1,8 @@
 ------------------------------------------------------------------------
 ssh z38166@204.90.115.200
 RED01WAX
+JET11OHM
+DYE29MOB
 
 ------------------------------------------------------------------------
 mkdir uss2output
@@ -11,4 +13,25 @@ chmod 600 /mylinuxonekey.pem
 
 # ssh -i /path/to/key/keyname.pem linux1@148.100.112.129
 ssh -i /mylinuxonekey.pem linux1@148.100.112.129
-ssh -i linux1@148.100.112.129       -- esse deu certo
+ssh -i mylinuxonekey.pem linux1@148.100.112.129       -- esse deu certo
+
+tail -f /var/log/messages
+--------------------------------------------------------
+instalando o open JDK
+sudo apt update
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt update
+sudo apt-get install openjdk-8-jdk
+java -version
+
+/usr/lib/jvm/jdk-17.0.7_linux-x64_bin
+/usr/lib/jvm/java-8-openjdk-amd64/lib
+/usr/lib/jvm/java-1.17.0-openjdk-amd64/lib
+/usr/lib/jvm/jdk-17.0.7_linux-x64_bin/jdk-17.0.7/lib
+
+/usr/bin/java       -- deu certo no DB2 extension
+/usr/lib/jvm/jdk-17.0.7_linux-x64_bin
+/usr/lib/jvm/jdk-17.0.7_linux-x64_bin/jdk-17.0.7    --deu certo no Zopen
+
+
+

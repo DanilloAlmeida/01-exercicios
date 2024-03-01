@@ -1,0 +1,19 @@
+"DEPTNO","DEPTNAME","MGRNO","ADMRDEPT","LOCATION","MAX_COMPENSATION"
+"A00","SPIFFY COMPUTER SERVICE DIV.","000010","A00","Los Angeles     ","52750"
+"B01","PLANNING","000020","A00","Los Angeles     ","41250"
+"C01","INFORMATION CENTER","000030","A00","Los Angeles     ","38250"
+"D01","DEVELOPMENT CENTER","000130","A00","Beverly Hills   ",
+"D11","MANUFACTURING SYSTEMS","000060","D01","Los Angeles     ","32250"
+"D21","ADMINISTRATION SYSTEMS","000070","D01","Los Angeles     ","36170"
+"E01","SUPPORT SERVICES","000050","A00","Los Angeles     ","40175"
+"E11","OPERATIONS","000090","E01","Los Angeles     ","26150"
+"E21","SOFTWARE SUPPORT","000100","E01","Los Angeles     ","52750"
+"F22","BRANCH OFFICE F2","000130","E01","Beverly Hills   ",
+"G22","BRANCH OFFICE G2","000130","E01","Beverly Hills   ",
+"H22","BRANCH OFFICE H2","000130","E01","Beverly Hills   ",
+"I22","BRANCH OFFICE I2","000130","E01","Beverly Hills   ",
+"J22","BRANCH OFFICE J2","000130","E01","Beverly Hills   ",
+"J23","BRANCH OFFICE J23","000100","D01","Compton         ",
+"J24","BRANCH OFFICE J24","000110","D01","San Francisco   ",
+"J25","ezzed","000010","A00","Tn              ","500"
+"J26","ezzed","000010","A00","Tn              ","500"
