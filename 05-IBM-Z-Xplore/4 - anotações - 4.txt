@@ -32,6 +32,14 @@ java -version
 /usr/bin/java       -- deu certo no DB2 extension
 /usr/lib/jvm/jdk-17.0.7_linux-x64_bin
 /usr/lib/jvm/jdk-17.0.7_linux-x64_bin/jdk-17.0.7    --deu certo no Zopen
+------------------------------------------------------------------------
+LOGIN LINUXONE:
+EM: /home/danillo
+ssh -i mylinuxonekey.pem linux1@148.100.112.129
 
+yum search apache
+sudo yum install httpd.s390x
 
-
+sudo apachectl start
+sudo systemctl enable httpd
+sudo apachectl status
