@@ -1,5 +1,78 @@
 In the destination or host address field, type the following IP Address:
 204.90.115.200:623
+<<<<<<< HEAD
 
 logon Z38166
 DYE29MOB
+=======
+logon Z38166
+DYE29MOB  >> ACE47HAT >> 28/04/2024
+------------------------------------------------------------------------
+
+tso submit ‘ZXP.PUBLIC.JCL(chalcopy)’
+tso submit ‘ZXP.PUBLIC.EXEC(WSL)’
+tso submit ‘ZXP.PUBLIC.EXEC(WSL$)’
+tso submit ‘ZXP.PUBLIC.JCL(WSLJCL)’
+------------------------------------------------------------------------
+********************************* TOP OF DATA **********************************
+S0W1      2024147  06:46:55.30             ISF045W Unable to open table library 
+S0W1      2024147  06:47:13.50             ISF031I CONSOLE Z38166 ACTIVATED     
+******************************** BOTTOM OF DATA ********************************
+DSF ULOG  CONSOLE Z38166                         LINE  COMMAND ISSUED
+ESPONSE=S0W1                                                         
+IGD002I 06:47:53 DISPLAY SMS 054                                     
+SCDS = SMS.SCDS1.SCDS                                                
+ACDS = SMS.ACDS1.ACDS                                                
+COMMDS = SMS.COMMDS1.COMMDS                                          
+ACDS LEVEL = z/OS V2.4                                               
+DINTERVAL = 150                                                      
+REVERIFY = NO                                                        
+ACSDEFAULTS = NO                                                     
+    SYSTEM     CONFIGURATION LEVEL    INTERVAL SECONDS               
+    SVSCPLEX   ---------- --------          N/A                      
+    S0W1       2024/05/26 06:47:51           15                      
+                                                                     
+                                                                      ──────────────────────────────────────────────────────────────────────────────
+                               ACS OBJECT DISPLAY                              
+                                                                               
+ CDS Name  : ACTIVE                                                            
+                                                                               
+ ACS Rtn   Source Data Set ACS      Member    Last Trans  Last Date  Last Time
+ Type      Routine Translated from  Name      Userid      Translated Translated
+ --------  -----------------------  --------  ----------  ---------- ----------
+ DATACLAS  VENDOR.PARMLIB           AC$STORD  A99993      2024/05/01  02:22    
+                                                                               
+                                                                               
+ MGMTCLAS  -----------------------  --------  --------    ----------  -----    
+                                                                               
+                                                                               
+ STORCLAS  VENDOR.PARMLIB           AC$STORC  A99993      2024/05/01  02:22    
+                                                                               
+                                                                               
+ STORGRP   VENDOR.PARMLIB           AC$STORG  A99993      2024/05/01  02:23    
+-------------------------------------------------------------------------
+
+VENDOR.PARMLIB(AC$STORD)
+------------------------------------------------------------------------
+
+STORAGE 
+GRP NAME
+--(23)--
+ZXP     
+SGSLOAD 
+SGSPDS  
+ZXP     
+SGSSEQ  
+SGSPDS  
+ZXP     
+ZXP     
+SGNOPE  
+ISPF    
+ISPF    
+SGDUMP 
+
+
+ LINE       VOLUME FREE       %     ALLOC      FRAG   LARGEST    FREE     FRAG   LARGEST    FREE     INDEX     FREE     FREE   
+ OPERATOR   SERIAL SPACE      FREE  SPACE      INDEX  EXTENT     EXTENTS  INDEX  EXTENT     EXTENTS  STATUS    DSCBS    VIRS   
+---(1)----  -(2)-- ---(3)---  (4)-  ---(5)---  -(6)-  ---(7)---  --(8)--  -(6)-  ---(7)---  --(8)--  --(9)---  -(10)--  -(11)--
+>>>>>>> 8a6df31ed71b6ece6d4e2f4dfc337c89af221ffa
