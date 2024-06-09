@@ -27,7 +27,7 @@ ACSDEFAULTS = NO
     SVSCPLEX   ---------- --------          N/A                      
     S0W1       2024/05/26 06:47:51           15                      
                                                                      
-                                                                      ──────────────────────────────────────────────────────────────────────────────
+──────────────────────────────────────────────────────────────────────────────
                                ACS OBJECT DISPLAY                              
                                                                                
  CDS Name  : ACTIVE                                                            
@@ -70,3 +70,91 @@ SGDUMP
  LINE       VOLUME FREE       %     ALLOC      FRAG   LARGEST    FREE     FRAG   LARGEST    FREE     INDEX     FREE     FREE   
  OPERATOR   SERIAL SPACE      FREE  SPACE      INDEX  EXTENT     EXTENTS  INDEX  EXTENT     EXTENTS  STATUS    DSCBS    VIRS   
 ---(1)----  -(2)-- ---(3)---  (4)-  ---(5)---  -(6)-  ---(7)---  --(8)--  -(6)-  ---(7)---  --(8)--  --(9)---  -(10)--  -(11)--
+
+anotações 08/06/2024
+
+────────────────────────────────────────────────────────────────────────────── 
+                         VOLUME SELECTION ENTRY PANEL              Page 1 of 3
+                                                                               
+Select Source to Generate Volume List  . . 2  (1 - Saved list, 2 - New list)  
+  1  Generate from a Saved List         Query Name To                         
+       List Name  . .                   Save or Retrieve                       
+  2  Generate a New List from Criteria Below                                  
+       Specify Source of the New List  . . 2  (1 - Physical, 2 - SMS)         
+       Optionally Specify One or More:                                        
+       Enter "/" to select option      Generate Exclusive list                 
+         Type of Volume List . . . 1          (1-Online,2-Not Online,3-Either)
+         Volume Serial Number  . . ZXP*       (fully or partially specified)  
+         Device Type . . . . . . .            (fully or partially specified)  
+         Device Number . . . . . .            (fully specified)               
+           To Device Number  . . .            (for range of devices)          
+         Acquire Physical Data . . Y          (Y or N)                        
+         Acquire Space Data  . . . Y          (Y or N)                        
+         Storage Group Name  . . . *          (fully or partially specified)  
+         CDS Name . . . . . . . 'ACTIVE'
+                                              (fully specified or 'Active')   
+Use ENTER to Perform Selection; Use DOWN Command to View next Selection Panel;
+Use HELP Command for Help; Use END Command to Exit.                           
+
+
+ LINE       VOLUME DUPLEX    OTHER   SUBSYS  PHYSICAL  STORAGE   CF VOLUME
+ OPERATOR   SERIAL STATUS    DEVICE  ID      STATUS    GRP NAME  STATUS   
+---(1)----  -(2)-- --(19)--  -(20)-  -(21)-  --(22)--  --(23)--  --(24)---
+            ZXPL01 SIMPLEX     ----    D800  CONVERT   --------  ---------
+            ZXPM01 SIMPLEX     ----    A001  CONVERT   --------  ---------
+            ZXPM02 SIMPLEX     ----    A003  CONVERT   --------  ---------
+            ZXPM03 SIMPLEX     ----    5000  CONVERT   --------  ---------
+            ZXPM04 SIMPLEX     ----    5000  CONVERT   --------  ---------
+            ZXPM05 SIMPLEX     ----    5000  CONVERT   --------  ---------
+            ZXPM06 SIMPLEX     ----    5000  CONVERT   --------  ---------
+            ZXPM07 SIMPLEX     ----    5000  CONVERT   --------  ---------
+            ZXPS01 SIMPLEX     ----    A001  CONVERT   --------  ---------
+            ZXPS02 SIMPLEX     ----    A001  CONVERT   --------  ---------
+            ZXPS03 SIMPLEX     ----    A001  CONVERT   --------  ---------
+            ZXPS04 SIMPLEX     ----    A001  CONVERT   --------  ---------
+            ZXP002 SIMPLEX     ----    D800  NONSMS    --------  ---------
+            ZXP003 SIMPLEX     ----    A400  CONVERT   --------  ---------
+----------  ------ -----------  BOTTOM  OF  DATA  -----------  ------  ---
+
+
+NONSMS.
+Z38166.TOOBIG
+
+Z38166.NONSMS
+ZXP002       
+
+ZXP SAYS NO
+
+VOLUME PHYSICAL  STORAGE 
+SERIAL STATUS    GRP NAME
+-(2)-- --(22)--  --(23)--
+ZXPL01 CONVERT   ZXP     
+ZXPM01 CONVERT   SGSLOAD 
+ZXPM02 CONVERT   SGSPDS  
+ZXPM03 CONVERT   ZXP     
+ZXPM04 CONVERT   SGSSEQ  
+ZXPM05 CONVERT   SGSPDS  
+ZXPM06 CONVERT   ZXP     
+ZXPM07 CONVERT   ZXP     
+ZXPS01 CONVERT   SGNOPE  
+ZXPS02 CONVERT   ISPF    
+ZXPS03 CONVERT   ISPF    
+ZXP003 CONVERT   SGDUMP  
+------ -----------  BOTTO
+
+VOLUME PHYSICAL  STORAGE 
+SERIAL STATUS    GRP NAME
+-(2)-- --(22)--  --(23)--
+ZXPL01 CONVERT   ZXP     
+ZXPM01 CONVERT   SGSLOAD 
+ZXPM02 CONVERT   SGSPDS  
+ZXPM03 CONVERT   ZXP     
+ZXPM04 CONVERT   SGSSEQ  
+ZXPM05 CONVERT   SGSPDS  
+ZXPM06 CONVERT   ZXP     
+ZXPM07 CONVERT   ZXP     
+ZXPS01 CONVERT   SGNOPE  
+ZXPS02 CONVERT   ISPF    
+ZXPS03 CONVERT   ISPF    
+ZXP003 CONVERT   SGDUMP  
+------ -----------  BOTTO
