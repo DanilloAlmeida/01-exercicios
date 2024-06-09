@@ -1,5 +1,10 @@
 In the destination or host address field, type the following IP Address:
 204.90.115.200:623
+<<<<<<< HEAD
+
+logon Z38166
+DYE29MOB
+=======
 logon Z38166
 DYE29MOB  >> ACE47HAT >> 28/04/2024
 ------------------------------------------------------------------------
@@ -70,6 +75,7 @@ SGDUMP
  LINE       VOLUME FREE       %     ALLOC      FRAG   LARGEST    FREE     FRAG   LARGEST    FREE     INDEX     FREE     FREE   
  OPERATOR   SERIAL SPACE      FREE  SPACE      INDEX  EXTENT     EXTENTS  INDEX  EXTENT     EXTENTS  STATUS    DSCBS    VIRS   
 ---(1)----  -(2)-- ---(3)---  (4)-  ---(5)---  -(6)-  ---(7)---  --(8)--  -(6)-  ---(7)---  --(8)--  --(9)---  -(10)--  -(11)--
+<<<<<<< HEAD
 
 anotações 08/06/2024
 
@@ -158,3 +164,6 @@ ZXPS02 CONVERT   ISPF
 ZXPS03 CONVERT   ISPF    
 ZXP003 CONVERT   SGDUMP  
 ------ -----------  BOTTO
+=======
+>>>>>>> 8a6df31ed71b6ece6d4e2f4dfc337c89af221ffa
+>>>>>>> 7dd875b314136ccc4e957447de403a4dc8972295
