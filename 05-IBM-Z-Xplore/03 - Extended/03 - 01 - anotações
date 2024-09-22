@@ -11,6 +11,11 @@ DYE29MOB  >> ZOO17EEL >> 28/04/2024
 Watch out for any host addresses - make sure to set VSCode and TSO addresses to 204.90.115.200, instead of 192.86.32.250.
 
 
+ssh z38166@204.90.115.200
+ZAG21USE
+
+PORT=38166 node program2.js
+
 ------------------------------------------------------------------------
 
 tso submit ‘ZXP.PUBLIC.JCL(chalcopy)’

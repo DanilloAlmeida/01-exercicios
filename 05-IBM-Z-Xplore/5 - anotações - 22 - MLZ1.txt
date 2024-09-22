@@ -1,0 +1,31 @@
+------------------------------------------------------------------------
+ssh z38166@204.90.115.200
+CREDENTIALS 
+z38166
+DYE29MOB
+------------------------------------------------------------------------
+LOGIN LINUXONE:
+ssh -i mylinuxonekey.pem linux1@148.100.112.129
+------------------------------------------------------------------------
+curl -fsSL https://test.docker.com -o test-docker.sh
+sudo sh test-docker.sh
+sudo usermod -aG docker $USER; newgrp docker
+sudo systemctl start docker
+exec bash
+docker ps
+sudo iptables -I INPUT -p tcp --dport 38888 -j ACCEPT
+sudo bash -c "iptables-save > /etc/iptables/rules.v4"
+docker login -u l1cc registry.linuxone.cloud.marist.edu
+    Linux0NE
+
+docker run -d registry.linuxone.cloud.marist.edu/jupyterlab-image-s390x:latest \
+jupyter lab --ServerApp.token='IBMZXPLORE'
+
+http://148.100.112.129:38888/
+L1Hackathon
+
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
+------------------------------------------------------------------------
