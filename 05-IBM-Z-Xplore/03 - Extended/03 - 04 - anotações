@@ -1,0 +1,66 @@
+ssh z38166@204.90.115.200
+ZAG21USE
+--------------------------------------------------------------------------------
+********************************************************************************
+listdsd da('YOURZID.**')
+ld da('YOURZID.secret') all
+--------------------------------------------------------------------------------
+ZXP.PUBLIC.RACF.OPEN
+ZXP.PUBLIC.RACF.CLOSED
+
+listdsd da('ZXP.PUBLIC.**')               > OK
+listdsd da('ZXP.PUBLIC.**') all           > ok
+
+listdsd da('ZXP.PUBLIC.OPEN') all         > nok
+listdsd da('ZXP.PUBLIC.CLOSED') all       > nok
+
+listdsd da('ZXP.PUBLIC.CLOSED.**') all    > NOK
+listdsd da('ZXP.PUBLIC.CLOSED.**')        > NOK
+
+listdsd da('ZXP.PUBLIC.OPEN.**') all      > NOK
+listdsd da('ZXP.PUBLIC.OPEN.**')          > NOK
+
+listdsd da('ZXP.PUBLIC.OPEN')      > NOK
+
+ld da('ZXP.PUBLIC.OPEN')      > onk
+********************************************************************************
+ld da('ZXP.PUBLIC.RACF.OPEN')        > OK
+
+ld da ('ZXP.PUBLIC.RACF.CLOSED.**')       > NOK
+ld da ('ZXP.PUBLIC.RACF.CLOSED.**') ALL   > NOK
+ld da ('ZXP.PUBLIC.RACF.CLOSED')          > NOK
+
+ld da('ZXP.PUBLIC.RACF.**')          > NOT AUTHORIZED TO LIST ZXP.PUBLIC.RACF.**
+
+lU da('ZXP.PUBLIC.RACF.OPEN')         > nok
+---------------------------------------------------------------
+ld da ('z38166.**')
+addsd 'z38166.secret' generic uacc(read)
+ald 'z38166.secret' generic uacc(update)
+dd 'z38166.secret' generic uacc(delete) >nok
+
+dd ('z38166.secret') all
+
+z38166.secret dd 
+DD 'z38166.secret'    > OK
+---------------------------------------------------------------
+Z38166.magic
+ald ('z38166.magic') generic uacc(update)
+
+addsd 'z38166.magic' generic uacc(read)   > ok
+addsd 'z38166.**' generic uacc(nome)      > Nok
+
+ld da('z38166.magic') all
+
+
+
+
+********************************************************************************
+--------------------------------------------------------------------------------
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+

@@ -1,173 +1,25 @@
-In the destination or host address field, type the following IP Address:
-204.90.115.200:623
-<<<<<<< HEAD
+ssh z38166@204.90.115.200
+ZAG21USE
+--------------------------------------------------------------------------------
+********************************************************************************
+listdsd da('YOURZID.**')
+ld da('YOURZID.secret') all
+--------------------------------------------------------------------------------
+ZXP.PUBLIC.RACF.OPEN
+ZXP.PUBLIC.RACF.CLOSED
 
 logon Z38166
 DYE29MOB
-=======
-logon Z38166
-ZAG21USE 01/09/2024
-===============================================
-Watch out for any host addresses - make sure to set VSCode and TSO addresses to 204.90.115.200, instead of 192.86.32.250.
 
 
-------------------------------------------------------------------------
-
-tso submit ‘ZXP.PUBLIC.JCL(chalcopy)’
-tso submit ‘ZXP.PUBLIC.EXEC(WSL)’
-tso submit ‘ZXP.PUBLIC.EXEC(WSL$)’
-tso submit ‘ZXP.PUBLIC.JCL(WSLJCL)’
-------------------------------------------------------------------------
-********************************* TOP OF DATA **********************************
-S0W1      2024147  06:46:55.30             ISF045W Unable to open table library 
-S0W1      2024147  06:47:13.50             ISF031I CONSOLE Z38166 ACTIVATED     
-******************************** BOTTOM OF DATA ********************************
-DSF ULOG  CONSOLE Z38166                         LINE  COMMAND ISSUED
-ESPONSE=S0W1                                                         
-IGD002I 06:47:53 DISPLAY SMS 054                                     
-SCDS = SMS.SCDS1.SCDS                                                
-ACDS = SMS.ACDS1.ACDS                                                
-COMMDS = SMS.COMMDS1.COMMDS                                          
-ACDS LEVEL = z/OS V2.4                                               
-DINTERVAL = 150                                                      
-REVERIFY = NO                                                        
-ACSDEFAULTS = NO                                                     
-    SYSTEM     CONFIGURATION LEVEL    INTERVAL SECONDS               
-    SVSCPLEX   ---------- --------          N/A                      
-    S0W1       2024/05/26 06:47:51           15                      
-                                                                     
-──────────────────────────────────────────────────────────────────────────────
-                               ACS OBJECT DISPLAY                              
-                                                                               
- CDS Name  : ACTIVE                                                            
-                                                                               
- ACS Rtn   Source Data Set ACS      Member    Last Trans  Last Date  Last Time
- Type      Routine Translated from  Name      Userid      Translated Translated
- --------  -----------------------  --------  ----------  ---------- ----------
- DATACLAS  VENDOR.PARMLIB           AC$STORD  A99993      2024/05/01  02:22    
-                                                                               
-                                                                               
- MGMTCLAS  -----------------------  --------  --------    ----------  -----    
-                                                                               
-                                                                               
- STORCLAS  VENDOR.PARMLIB           AC$STORC  A99993      2024/05/01  02:22    
-                                                                               
-                                                                               
- STORGRP   VENDOR.PARMLIB           AC$STORG  A99993      2024/05/01  02:23    
--------------------------------------------------------------------------
-
-VENDOR.PARMLIB(AC$STORD)
-------------------------------------------------------------------------
-
-STORAGE 
-GRP NAME
---(23)--
-ZXP     
-SGSLOAD 
-SGSPDS  
-ZXP     
-SGSSEQ  
-SGSPDS  
-ZXP     
-ZXP     
-SGNOPE  
-ISPF    
-ISPF    
-SGDUMP 
 
 
- LINE       VOLUME FREE       %     ALLOC      FRAG   LARGEST    FREE     FRAG   LARGEST    FREE     INDEX     FREE     FREE   
- OPERATOR   SERIAL SPACE      FREE  SPACE      INDEX  EXTENT     EXTENTS  INDEX  EXTENT     EXTENTS  STATUS    DSCBS    VIRS   
----(1)----  -(2)-- ---(3)---  (4)-  ---(5)---  -(6)-  ---(7)---  --(8)--  -(6)-  ---(7)---  --(8)--  --(9)---  -(10)--  -(11)--
-<<<<<<< HEAD
+********************************************************************************
+--------------------------------------------------------------------------------
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
+********************************************************************************
 
-anotações 08/06/2024
-
-────────────────────────────────────────────────────────────────────────────── 
-                         VOLUME SELECTION ENTRY PANEL              Page 1 of 3
-                                                                               
-Select Source to Generate Volume List  . . 2  (1 - Saved list, 2 - New list)  
-  1  Generate from a Saved List         Query Name To                         
-       List Name  . .                   Save or Retrieve                       
-  2  Generate a New List from Criteria Below                                  
-       Specify Source of the New List  . . 2  (1 - Physical, 2 - SMS)         
-       Optionally Specify One or More:                                        
-       Enter "/" to select option      Generate Exclusive list                 
-         Type of Volume List . . . 1          (1-Online,2-Not Online,3-Either)
-         Volume Serial Number  . . ZXP*       (fully or partially specified)  
-         Device Type . . . . . . .            (fully or partially specified)  
-         Device Number . . . . . .            (fully specified)               
-           To Device Number  . . .            (for range of devices)          
-         Acquire Physical Data . . Y          (Y or N)                        
-         Acquire Space Data  . . . Y          (Y or N)                        
-         Storage Group Name  . . . *          (fully or partially specified)  
-         CDS Name . . . . . . . 'ACTIVE'
-                                              (fully specified or 'Active')   
-Use ENTER to Perform Selection; Use DOWN Command to View next Selection Panel;
-Use HELP Command for Help; Use END Command to Exit.                           
-
-
- LINE       VOLUME DUPLEX    OTHER   SUBSYS  PHYSICAL  STORAGE   CF VOLUME
- OPERATOR   SERIAL STATUS    DEVICE  ID      STATUS    GRP NAME  STATUS   
----(1)----  -(2)-- --(19)--  -(20)-  -(21)-  --(22)--  --(23)--  --(24)---
-            ZXPL01 SIMPLEX     ----    D800  CONVERT   --------  ---------
-            ZXPM01 SIMPLEX     ----    A001  CONVERT   --------  ---------
-            ZXPM02 SIMPLEX     ----    A003  CONVERT   --------  ---------
-            ZXPM03 SIMPLEX     ----    5000  CONVERT   --------  ---------
-            ZXPM04 SIMPLEX     ----    5000  CONVERT   --------  ---------
-            ZXPM05 SIMPLEX     ----    5000  CONVERT   --------  ---------
-            ZXPM06 SIMPLEX     ----    5000  CONVERT   --------  ---------
-            ZXPM07 SIMPLEX     ----    5000  CONVERT   --------  ---------
-            ZXPS01 SIMPLEX     ----    A001  CONVERT   --------  ---------
-            ZXPS02 SIMPLEX     ----    A001  CONVERT   --------  ---------
-            ZXPS03 SIMPLEX     ----    A001  CONVERT   --------  ---------
-            ZXPS04 SIMPLEX     ----    A001  CONVERT   --------  ---------
-            ZXP002 SIMPLEX     ----    D800  NONSMS    --------  ---------
-            ZXP003 SIMPLEX     ----    A400  CONVERT   --------  ---------
-----------  ------ -----------  BOTTOM  OF  DATA  -----------  ------  ---
-
-
-NONSMS.
-Z38166.TOOBIG
-
-Z38166.NONSMS
-ZXP002       
-
-ZXP SAYS NO
-
-VOLUME PHYSICAL  STORAGE 
-SERIAL STATUS    GRP NAME
--(2)-- --(22)--  --(23)--
-ZXPL01 CONVERT   ZXP     
-ZXPM01 CONVERT   SGSLOAD 
-ZXPM02 CONVERT   SGSPDS  
-ZXPM03 CONVERT   ZXP     
-ZXPM04 CONVERT   SGSSEQ  
-ZXPM05 CONVERT   SGSPDS  
-ZXPM06 CONVERT   ZXP     
-ZXPM07 CONVERT   ZXP     
-ZXPS01 CONVERT   SGNOPE  
-ZXPS02 CONVERT   ISPF    
-ZXPS03 CONVERT   ISPF    
-ZXP003 CONVERT   SGDUMP  
------- -----------  BOTTO
-
-VOLUME PHYSICAL  STORAGE 
-SERIAL STATUS    GRP NAME
--(2)-- --(22)--  --(23)--
-ZXPL01 CONVERT   ZXP     
-ZXPM01 CONVERT   SGSLOAD 
-ZXPM02 CONVERT   SGSPDS  
-ZXPM03 CONVERT   ZXP     
-ZXPM04 CONVERT   SGSSEQ  
-ZXPM05 CONVERT   SGSPDS  
-ZXPM06 CONVERT   ZXP     
-ZXPM07 CONVERT   ZXP     
-ZXPS01 CONVERT   SGNOPE  
-ZXPS02 CONVERT   ISPF    
-ZXPS03 CONVERT   ISPF    
-ZXP003 CONVERT   SGDUMP  
------- -----------  BOTTO
-=======
->>>>>>> 8a6df31ed71b6ece6d4e2f4dfc337c89af221ffa
->>>>>>> 7dd875b314136ccc4e957447de403a4dc8972295
